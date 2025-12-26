@@ -1,0 +1,8 @@
+{
+  "name": "Smart Academy Pal",
+  "description": "A gamified, subject-specific learning assistant for Class 7 students powered by Gemini.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Smart Academy Pal</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&amp;family=Balsamiq+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    // Pastel Color Palette
+                    "pastel-yellow": "#FFECB3", 
+                    "pastel-blue": "#B3E0FF", 
+                    "pastel-green": "#C8E6C9", 
+                    "pastel-pink": "#FFCDD2", 
+                    "pastel-purple": "#E1BEE7", 
+                    "pastel-grey": "#F5F5F5", 
+                },
+                fontFamily: {
+                    "display": ["Fredoka", "sans-serif"], 
+                    "body": ["Balsamiq Sans", "cursive"], 
+                },
+                borderRadius: {"DEFAULT": "1.5rem", "lg": "2.5rem", "xl": "3.5rem", "full": "9999px"},
+                boxShadow: {
+                    "glow": "0 0 15px rgba(255, 205, 210, 0.7)", 
+                    "glass": "0 8px 32px 0 rgba(179, 224, 255, 0.3)", 
+                }
+            },
+        },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #F5F5F5;border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #B3E0FF;border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #90CAF9;
+    }
+    .glass-panel {
+        background: rgba(255, 255, 255, 0.85);backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+    }
+    /* Hide scrollbar for chrome/safari/opera */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .scrollbar-hide {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-markdown": "https://esm.sh/react-markdown@^10.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#B3E0FF] h-screen w-full overflow-hidden font-body text-[#333333]">
+  <div id="root" class="h-full w-full"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
